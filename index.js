@@ -1,5 +1,16 @@
 // Your code here
 
+let createEmployeeRecord = function(row){
+  return {
+    firstName: row[0],
+    familyName: row[1],
+    title: row[2],
+    payPerHour: row[3],
+    timeInEvents: [],
+    timeOutEvents: []
+  }
+}
+
 function createEmployeeRecords(employeesInfo) {
   return employeesInfo.map(employeeInfo => createEmployeeRecord(employeeInfo));
 }
